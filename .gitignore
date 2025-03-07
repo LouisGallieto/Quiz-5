@@ -1,0 +1,6 @@
+venv
+
+*.pyc
+*.pyd
+*.pyd
+__pycache__/

@@ -12,7 +12,7 @@ const Login = () => {
   });
 
   const dispatch = useAppDispatch();
-  const { loading, error, message } = useAppSelector((state) => state.auth);
+  const { loading, error, message } = useAppSelector((state) => state.auth ?? {});
 
   const handleSubmit = (e) => {
     e.preventDefault();

@@ -3,6 +3,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Products from "./pages/Product";
 import User from "./pages/User";
+import Login from "./pages/Login";
+
+
 
 const router = createBrowserRouter([
   {
@@ -17,6 +20,10 @@ const router = createBrowserRouter([
     path: "/user",
     element: <User />,
   },
+  {
+    path: "/login",
+    element: <Login />,
+  },
 ]);
 
 function App() {
@@ -26,5 +33,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;
